@@ -1,0 +1,502 @@
+/* General Styling */
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  background: #3c3744;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 4em auto;
+}
+
+.title {
+  width: auto;
+  max-width: 400px;
+  margin: 0 auto 2em;
+  text-align: center;
+}
+
+.title h1 {
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.set {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+svg {
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+/* Set 1 Styling */
+
+.s1 .card {
+  background: #3c3744;
+  height: 400px;
+  overflow: hidden;
+  margin: 1em;
+  position: relative;
+  cursor: pointer;
+  width: 250px;
+}
+
+.s1 .content {
+  background: #b4c5e4;
+  box-shadow: 0 0 0 10px #3c3744 inset;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  position: relative;
+  height: 400px;
+  width: 250px;
+  transition: 0.1s all ease-out;
+  -webkit-transition: 0.1s all ease-out;
+}
+
+.s1 line {
+  stroke-width: 10;
+  stroke: #b4c5e4;
+  fill: none;
+  transition: 0.5s all ease-out;
+  -webkit-transition: 0.5s all ease-out;
+}
+
+.s1 line.v {
+  stroke-dasharray: 400;
+}
+
+.s1 line.h {
+  stroke-dasharray: 250;
+}
+
+.s1 .card:focus > .content,
+.s1 .card:active > .content {
+  box-shadow: 0 0 0 12px #3c3744 inset;
+}
+
+.s1 .card:hover line {
+  stroke-width: 5;
+}
+
+.s1 .card:hover line.top {
+  transform: translateX(-500px);
+  -webkit-transform: translateX(-500px);
+}
+
+.s1 .card:hover line.bottom {
+  transform: translateX(500px);
+  -webkit-transform: translateX(500px);
+}
+
+.s1 .card:hover line.left {
+  transform: translateY(800px);
+  -webkit-transform: translateY(800px);
+}
+
+.s1 .card:hover line.right {
+  transform: translateY(-800px);
+  -webkit-transform: translateY(-800px);
+}
+
+.got {
+  color: #3c3744;
+  text-align: center;
+  margin: 0;
+}
+
+.got-number {
+  font-size: 7em;
+  margin: auto;
+  height: 50%;
+}
+
+.got-title, .got-author {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Set 2 Styling */
+
+.s2 .card {
+  background: #3c3744;
+  height: 400px;
+  overflow: hidden;
+  margin: 1em;
+  position: relative;
+  cursor: pointer;
+  width: 250px;
+}
+
+.s2 .content {
+  background: #b4c5e4;
+  box-shadow: 0 0 0 10px #3c3744 inset;
+  color: #3c3744;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  justify-content: flex-end;
+  padding: 1em;
+  position: relative;
+  height: 400px;
+  width: 250px;
+  transition: 0.3s all ease-out;
+  -webkit-transition: 0.3s all ease-out;
+}
+
+.s2 line {
+  stroke-width: 5;
+  stroke: #b4c5e4;
+  fill: none;
+  transition: 0.5s transform ease-out;
+  -webkit-transition: 0.5s -webkit-transform ease-out;
+}
+
+.s2 line.v {
+  stroke-dasharray: 400;
+}
+
+.s2 line.h {
+  stroke-dasharray: 250;
+}
+
+.s2 .card:hover > .content {
+  background: #3c3744;
+  color: #b4c5e4;;
+}
+
+.s2 .card:hover line.top {
+  transform: translateX(-500px);
+  -webkit-transform: translateX(-500px);
+}
+
+.s2 .card:hover line.bottom {
+  transform: translateX(500px);
+  -webkit-transform: translateX(500px);
+}
+
+.s2 .card:hover line.left {
+  transform: translateY(800px);
+  -webkit-transform: translateY(800px);
+}
+
+.s2 .card:hover line.right {
+  transform: translateY(-800px);
+  -webkit-transform: translateY(-800px);
+}
+
+.radio {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.radio-frequency {
+  font-size: 6em;
+  letter-spacing: -5px;
+  font-weight: 300;
+}
+
+.radio-name, .radio-location {
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: .9em;
+}
+
+/* Set 3 Styling */
+
+.s3 .card {
+  background: #3c3744;
+  height: 400px;
+  overflow: hidden;
+  margin: 1em;
+  position: relative;
+  cursor: pointer;
+  width: 250px;
+}
+
+.s3 .content {
+  background: #b4c5e4;
+  box-shadow: 0 0 0 12px #3c3744 inset;
+  color: #3c3744;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 400px;
+  padding: 2em;
+  justify-content: flex-end;
+  width: 250px;
+  transition: 0.3s all ease-out;
+  -webkit-transition: 0.3s all ease-out;
+}
+
+.s3 line {
+  stroke-width: 5;
+  stroke: #b4c5e4;
+  fill: none;
+  transition: 0.5s all ease-out;
+  -webkit-transition: 0.5s all ease-out;
+}
+
+.s3 line.v {
+  stroke-dasharray: 400;
+}
+
+.s3 line.h {
+  stroke-dasharray: 250;
+}
+
+.s3 .card:hover > .content {
+  background: #bc9cb0;
+}
+
+.s3 .card:hover line {
+  stroke: #bc9cb0;
+}
+
+.s3 .card:hover line.top {
+  transform: translateX(500px);
+  -webkit-transform: translateX(500px);
+}
+
+.s3 .card:hover line.bottom {
+  transform: translateX(-500px);
+  -webkit-transform: translateX(-500px);
+}
+
+.s3 .card:hover line.left {
+  transform: translateY(-800px);
+  -webkit-transform: translateY(-800px);
+}
+
+.s3 .card:hover line.right {
+  transform: translateY(800px);
+  -webkit-transform: translateY(800px);
+}
+
+.s3 hr {
+  width: 50%;
+  border: 1px solid #3c3744;
+}
+
+.wine-name {
+  font-size: 15em;
+  font-family: 'Euphoria-Script', cursive;
+  left: -45px;
+  margin: 0;
+  position: relative;
+}
+
+.wine-vintage, .wine-location {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+/* Set 4 Styling */
+
+.s4 .card {
+  background: #3c3744;
+  height: 400px;
+  overflow: hidden;
+  margin: 1em;
+  position: relative;
+  cursor: pointer;
+  width: 250px;
+}
+
+.s4 .content {
+  background: #3c3744;
+  box-shadow: 0 0 0 12px #3c3744 inset;
+  color: #bc9cb0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 400px;
+  padding: 2em;
+  justify-content: center;
+  width: 250px;
+  transition: 0.3s all ease-out;
+  -webkit-transition: 0.3s all ease-out;
+}
+
+.s4 line {
+  stroke-width: 5;
+  stroke: #b4c5e4;
+  fill: none;
+  transition: 0.5s all ease-out;
+  -webkit-transition: 0.5s all ease-out;
+}
+
+.s4 line.v {
+  stroke-dasharray: 430 340;
+}
+
+.s4 line.h {
+  stroke-dasharray: 280 190;
+}
+
+.s4 .card:hover > .content {
+  background: #bc9cb0;
+  color: #3c3744;
+}
+
+.s4 .card:hover line {
+  stroke: #bc9cb0;
+}
+
+.s4 .card:hover line.top {
+  transform: translateX(-250px);
+  -webkit-transform: translateX(-250px);
+}
+
+.s4 .card:hover line.bottom {
+  transform: translateX(250px);
+  -webkit-transform: translateX(250px);
+}
+
+.s4 .card:hover line.left {
+  transform: translateY(800px);
+  -webkit-transform: translateY(800px);
+}
+
+.s4 .card:hover line.right {
+  transform: translateY(-800px);
+  -webkit-transform: translateY(-800px);
+}
+
+.plan {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+.plan-price {
+  font-size: 5em;
+}
+
+.plan-month {
+  font-size: .8em;
+}
+
+/* Set 5 Styling */
+
+.s5 .card {
+  background: #3c3744;
+  height: 400px;
+  overflow: hidden;
+  margin: 1em;
+  position: relative;
+  cursor: pointer;
+  width: 250px;
+}
+
+.s5 .content {
+  background: #3c3744;
+  box-shadow: 0 0 0 10px #3c3744 inset;
+  color: #b4c5e4;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  padding: 1em;
+  position: relative;
+  height: 400px;
+  width: 250px;
+  justify-content: space-between;
+  transition: 0.3s all ease-out;
+  -webkit-transition: 0.3s all ease-out;
+}
+
+.s5 line {
+  stroke-width: 10;
+  stroke: #b4c5e4;
+  fill: none;
+  transition: 0.3s all ease-out;
+  -webkit-transition: 0.3s all ease-out;
+}
+
+.s5 line.v {
+  stroke-dasharray: 430 340;
+}
+
+.s5 line.h {
+  stroke-dasharray: 280 190;
+}
+
+.s5 .card:hover > .content {
+  background: #fdf5bf;
+  color: #3c3744;
+}
+
+.s5 .card:hover line {
+  stroke: #fdf5bf;
+  stroke-width: 5;
+}
+
+.s5 .card:hover .diff-taunt {
+  bottom: 0;
+}
+
+.s5 .card:focus .tick,
+.s5 .card:active .tick {
+  top: -75px;
+}
+
+.s5 .card:hover line.top {
+  transform: translateX(-250px);
+  -webkit-transform: translateX(-250px);
+}
+
+.s5 .card:hover line.bottom {
+  transform: translateX(250px);
+  -webkit-transform: translateX(250px);
+}
+
+.s5 .card:hover line.left {
+  transform: translateY(400px);
+  -webkit-transform: translateY(400px);
+}
+
+.s5 .card:hover line.right {
+  transform: translateY(-400px);
+  -webkit-transform: translateY(-400px);
+}
+
+.tick {
+  font-size: 7em;
+  margin: 0;
+  position: relative;
+  text-align: center;
+  transition: .2s top ease-out;
+  -webkit-transition: .2s top ease-out;
+  top: -65px;
+}
+
+.diff-name {
+  letter-spacing: 1px;
+  font-size: 2em;
+  font-weight: 100;
+  margin-bottom: 3em;
+  text-align: center;
+}
+
+.diff-taunt {
+  bottom: -50px;
+  position: relative;
+  text-align: center;
+  transition: .2s bottom ease-out;
+  -webkit-transition: .2s bottom ease-out;
+}
