@@ -15,11 +15,42 @@ section {
   margin: 4em auto;
 }
 
+line {
+  fill: none;
+  stroke: #b4c5e4;
+}
+
+svg {
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  position: relative;
+  transition: 0.3s all ease-out;
+  width: 250px;
+  -webkit-transition: 0.3s all ease-out;
+}
+
+.card {
+  background: #3c3744;
+  cursor: pointer;
+  height: 400px;
+  margin: 1em;
+  overflow: hidden;
+  position: relative;
+  width: 250px;
+}
+
 .title {
-  width: auto;
-  max-width: 400px;
   margin: 0 auto 2em;
+  max-width: 400px;
   text-align: center;
+  width: auto;
 }
 
 .title h1 {
@@ -38,41 +69,16 @@ section {
   width: 100%;
 }
 
-svg {
-  left: 0;
-  position: absolute;
-  top: 0;
-}
-
 /* Set 1 Styling */
-
-.s1 .card {
-  background: #3c3744;
-  height: 400px;
-  overflow: hidden;
-  margin: 1em;
-  position: relative;
-  cursor: pointer;
-  width: 250px;
-}
 
 .s1 .content {
   background: #b4c5e4;
   box-shadow: 0 0 0 10px #3c3744 inset;
-  display: flex;
-  flex-direction: column;
   padding: 1em;
-  position: relative;
-  height: 400px;
-  width: 250px;
-  transition: 0.1s all ease-out;
-  -webkit-transition: 0.1s all ease-out;
 }
 
 .s1 line {
   stroke-width: 10;
-  stroke: #b4c5e4;
-  fill: none;
   transition: 0.5s all ease-out;
   -webkit-transition: 0.5s all ease-out;
 }
@@ -116,53 +122,34 @@ svg {
 
 .got {
   color: #3c3744;
-  text-align: center;
   margin: 0;
+  text-align: center;
 }
 
 .got-number {
   font-size: 7em;
-  margin: auto;
   height: 50%;
+  margin: auto;
 }
 
 .got-title, .got-author {
-  text-transform: uppercase;
   letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 /* Set 2 Styling */
-
-.s2 .card {
-  background: #3c3744;
-  height: 400px;
-  overflow: hidden;
-  margin: 1em;
-  position: relative;
-  cursor: pointer;
-  width: 250px;
-}
 
 .s2 .content {
   background: #b4c5e4;
   box-shadow: 0 0 0 10px #3c3744 inset;
   color: #3c3744;
-  display: flex;
-  flex-direction: column;
   font-family: 'Roboto', sans-serif;
   justify-content: flex-end;
   padding: 1em;
-  position: relative;
-  height: 400px;
-  width: 250px;
-  transition: 0.3s all ease-out;
-  -webkit-transition: 0.3s all ease-out;
 }
 
 .s2 line {
   stroke-width: 5;
-  stroke: #b4c5e4;
-  fill: none;
   transition: 0.5s transform ease-out;
   -webkit-transition: 0.5s -webkit-transform ease-out;
 }
@@ -207,47 +194,28 @@ svg {
 
 .radio-frequency {
   font-size: 6em;
-  letter-spacing: -5px;
   font-weight: 300;
+  letter-spacing: -5px;
 }
 
 .radio-name, .radio-location {
-  letter-spacing: 1px;
-  font-weight: 500;
   font-size: .9em;
+  font-weight: 500;
+  letter-spacing: 1px;
 }
 
 /* Set 3 Styling */
-
-.s3 .card {
-  background: #3c3744;
-  height: 400px;
-  overflow: hidden;
-  margin: 1em;
-  position: relative;
-  cursor: pointer;
-  width: 250px;
-}
 
 .s3 .content {
   background: #b4c5e4;
   box-shadow: 0 0 0 12px #3c3744 inset;
   color: #3c3744;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  height: 400px;
-  padding: 2em;
   justify-content: flex-end;
-  width: 250px;
-  transition: 0.3s all ease-out;
-  -webkit-transition: 0.3s all ease-out;
+  padding: 2em;
 }
 
 .s3 line {
   stroke-width: 5;
-  stroke: #b4c5e4;
-  fill: none;
   transition: 0.5s all ease-out;
   -webkit-transition: 0.5s all ease-out;
 }
@@ -289,55 +257,36 @@ svg {
 }
 
 .s3 hr {
-  width: 50%;
   border: 1px solid #3c3744;
+  width: 50%;
 }
 
 .wine-name {
-  font-size: 15em;
   font-family: 'Euphoria-Script', cursive;
+  font-size: 15em;
   left: -45px;
   margin: 0;
   position: relative;
 }
 
 .wine-vintage, .wine-location {
-  text-align: center;
   font-family: 'Roboto', sans-serif;
   margin: 0;
+  text-align: center;
 }
 
 /* Set 4 Styling */
-
-.s4 .card {
-  background: #3c3744;
-  height: 400px;
-  overflow: hidden;
-  margin: 1em;
-  position: relative;
-  cursor: pointer;
-  width: 250px;
-}
 
 .s4 .content {
   background: #3c3744;
   box-shadow: 0 0 0 12px #3c3744 inset;
   color: #bc9cb0;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  height: 400px;
-  padding: 2em;
   justify-content: center;
-  width: 250px;
-  transition: 0.3s all ease-out;
-  -webkit-transition: 0.3s all ease-out;
+  padding: 2em;
 }
 
 .s4 line {
   stroke-width: 5;
-  stroke: #b4c5e4;
-  fill: none;
   transition: 0.5s all ease-out;
   -webkit-transition: 0.5s all ease-out;
 }
@@ -394,36 +343,17 @@ svg {
 
 /* Set 5 Styling */
 
-.s5 .card {
-  background: #3c3744;
-  height: 400px;
-  overflow: hidden;
-  margin: 1em;
-  position: relative;
-  cursor: pointer;
-  width: 250px;
-}
-
 .s5 .content {
   background: #3c3744;
   box-shadow: 0 0 0 10px #3c3744 inset;
   color: #b4c5e4;
-  display: flex;
-  flex-direction: column;
   font-family: 'Roboto', sans-serif;
-  padding: 1em;
-  position: relative;
-  height: 400px;
-  width: 250px;
   justify-content: space-between;
-  transition: 0.3s all ease-out;
-  -webkit-transition: 0.3s all ease-out;
+  padding: 1em;
 }
 
 .s5 line {
   stroke-width: 10;
-  stroke: #b4c5e4;
-  fill: none;
   transition: 0.3s all ease-out;
   -webkit-transition: 0.3s all ease-out;
 }
@@ -480,15 +410,15 @@ svg {
   margin: 0;
   position: relative;
   text-align: center;
+  top: -65px;
   transition: .2s top ease-out;
   -webkit-transition: .2s top ease-out;
-  top: -65px;
 }
 
 .diff-name {
-  letter-spacing: 1px;
   font-size: 2em;
   font-weight: 100;
+  letter-spacing: 1px;
   margin-bottom: 3em;
   text-align: center;
 }
